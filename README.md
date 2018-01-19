@@ -1,6 +1,5 @@
-# README #
+# BitBucket CHECK PULL REQUESTS IN PYTHON  Version 2.7.10 #
 
-# Python Version 2.7.10 #
 
 -u username
 -r repository_name - optional
