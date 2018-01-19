@@ -1,10 +1,10 @@
 # BitBucket CHECK PULL REQUESTS IN PYTHON  Version 2.7.10 #
 
 
--u username
--r repository_name - optional
-run script
-python open_me.py -u username 
+-u username <br/>
+-r repository_name - optional<br/>
+run script<br/>
+python open_me.py -u username <br/>
 
-run test python
-python -m unittest open_me
+run test python<br/>
+python -m unittest open_me<br/>
