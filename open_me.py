@@ -115,23 +115,3 @@ if __name__ == "__main__":
         bitbucket.open_pull_requests()
         if not bitbucket.pull_requests:
             print('not found pull requests')
-
-
-class TestCase(unittest.TestCase):
-    def setUp(self):
-        self.bitbucket = BitBucket('test_user_name', 'test_password')
-
-    def test_check_user(self):
-        try:
-            self.bitbucket.connection()
-        except urllib2.HTTPError as e:
-            self.assertEqual(e.code, 401)
-
-    def test_check_connection(self):
-        try:
-            self.bitbucket.open_pull_requests()
-        except ValueError as e:
-            self.assertEqual(e.message, 'not has connection \n call connection method')
-
-    def tearDown(self):
-        self.bitbucket = None
